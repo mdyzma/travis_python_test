@@ -1,23 +1,19 @@
 language: python
-
 python:
-  - 2.7
-  - 3.5
-  - 3.6
-
-# install dependencies
+- 2.7
+- 3.5
+- 3.6
 install:
-  - pip install -r requirements/dev.txt
-  - pip install codecov
-
-# run scripts
+- pip install -r requirements/dev.txt
+- pip install codecov
 script:
-  - python -m unittest discover
-  - behave
-  - coverage erase
-  - coverage run test_webapp.py && coverage html
-  - pylint --output-format=text webapp.py
-
-
+- python -m unittest discover
+- behave
+- coverage erase
+- coverage run test_webapp.py && coverage html
+- pylint --output-format=text webapp.py
 after_success:
-  - codecov
+- codecov
+deploy:
+  api_key:
+    secure: mSo7Q2TGXZou3GwctrEX5MBW1CrcNDeocOsau2QT5aqvVb8LUcgL8NqytDiOhWOBVX8u3cxn0nSME+j/Edz8Zxcw21Ls4kpZJu8VsJkn8oF/rPflBWIrW/6kw3hMucfec82eUxCOub2juXMTMbCTspaiWAAnpvsaptVmNhXIkvic3OXxRKKg50he9dpRbqRtyPlgR8nyXFYKJCRedzSwufpQWJ8t/pMy+epp06A6Z0CjbqOByYFfpxx7Vkbzj/L3+j4degED1SsmMmL3OQJHp00PJAcKYNEgPBXpgvRcppY/pS9YH/UnDT5nulU/1+K/IiBP/8/SRNj8MXdzlSAXqFBevEbCKyJRfWLMZ3tflbhdm3/0OeSN/3ncc2ypuwXHE5K/Td/P5NuPLmD5vH+di53Hxo/RHmltCxAKturPjrM6uS0bB24KctyztLERDudZkIBYAAZBZJ2t7alWeMY+cgPkfzs9fw0w6+ECphesdI2ZovE5pXXKEqX9Z83fgkAlw1d1iPpfOrz28C4QT12gsopYNFzW76lKKAGRtEUH07bu/R8IB4xohgtTf9a57mYcMYDcYCpJtMkNbqIEgYRDSS9nKdnL6pLNoJPGxsLrLarAYWMA1k7j5UaPBMweSuOj7Haowf84eH4tc/W4CRKMBvJw/HTDIxXdJWEaicpfljI=
