@@ -4,14 +4,11 @@
 # Debug
 Flask-DebugToolbar==0.10.1
 
-# Test
-behave==1.2.5
-WebTest==2.0.27
-#only in python 2.7
-mock==2.0.0
-
 # Lint and code style
 pylint==1.6.5
+
+# Coverage
+coveralls==1.2.0
 
 # Documentation
 Sphinx==1.6.5

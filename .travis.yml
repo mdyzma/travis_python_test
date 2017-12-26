@@ -1,9 +1,20 @@
 language: python
 
 python:
-    - "2.7"
-    - "3.6"
-    - "nightly"
+  - 2.7
+  - 3.5
+  - 3.6
+  - "3.7-Dev"
 
 # install dependencies
-install: "pip install -r requirements/dev.txt"
+install:
+  - pip install -r requirements/dev.txt
+  - pip install coveralls
+
+# run scripts
+script:
+  - coverage run tests.py
+  - pylint webapp.py
+
+after_success:
+  - codecov

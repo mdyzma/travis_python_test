@@ -1,5 +1,0 @@
-[behave]
-show_skipped = false
-show_timings = false
-default_format = pretty
-paths = tests/features

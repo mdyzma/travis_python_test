@@ -3,7 +3,7 @@ from behave import *
 @when(u'I navigate to Home Page')
 def step_impl(ctx):
     ctx.resp = ctx.client.get('/')
-    
-@then(u'{text} should be displayed')
-def step_impl(ctx, text):
-    assert text in ctx.resp
+
+@then(u'Home Page should be displayed')
+def step_impl(ctx):
+    assert 'Home Page' in ctx.resp
