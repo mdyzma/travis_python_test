@@ -14,7 +14,7 @@ install:
 # run scripts
 script:
   - python -m unittest discover
-  - coverage report webapp.py
+  - coverage html
   # - pylint --output-format=html webapp.py > pylint_report.html
 
 
