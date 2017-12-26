@@ -1,3 +1,6 @@
+"""
+Simple web application to test TravisCI mechanism
+"""
 from flask import Flask
 
 HTML = """
@@ -18,12 +21,14 @@ HTML = """
 </html>
 """
 
-
-app = Flask(__name__)
+#  We have to disale this i pyllint, because pylint will fail our build every time it encounters this "global" variable
+app = Flask(__name__) # pylint: disable=invalid-name
 
 
 @app.route('/')
 def home():
+    """ Main route to the web app
+    """
     return HTML
 
 if __name__ == '__main__':
