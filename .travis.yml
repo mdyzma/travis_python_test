@@ -13,7 +13,7 @@ install:
 
 # run scripts
 script:
-  - coverage run tests.py
+  - coverage run test_webapp.py
   - pylint webapp.py
 
 after_success:
