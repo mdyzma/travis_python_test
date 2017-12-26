@@ -5,7 +5,7 @@
 Flask-DebugToolbar==0.10.1
 
 # Lint and code style
-pylint==1.6.5
+pylint==1.8.1
 
 # Coverage
 coverage==4.4.2
