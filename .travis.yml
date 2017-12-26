@@ -17,7 +17,7 @@ script:
   - behave
   - coverage erase
   - coverage run test_webapp.py && coverage html
-  - pylint --output-format=html webapp.py > pylint_report.html
+  - pylint --output-format=text webapp.py
 
 
 after_success:
