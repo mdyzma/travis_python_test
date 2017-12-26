@@ -12,7 +12,7 @@ class HomeViewTest(unittest.TestCase):
 
     def test_home_page(self):
         home = self.app.get('/')
-        assert 'Home Page'in home.data
+        self.assertIn('Home Page', str(home.data))
 
 
 if __name__ == "__main__":

@@ -5,3 +5,8 @@ Flask==0.12.2
 
 # Deployment
 gunicorn==19.7.1
+
+# Tests
+pytest
+pytest-runner
+pytest-cov
