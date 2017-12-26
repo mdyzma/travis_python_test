@@ -16,7 +16,7 @@ script:
   - python -m unittest discover
   - coverage erase
   - coverage run test_webapp.py && coverage html
-  # - pylint --output-format=html webapp.py > pylint_report.html
+  - pylint --output-format=html webapp.py > pylint_report.html
 
 
 after_success:
