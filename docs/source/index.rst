@@ -6,7 +6,7 @@
 Welcome to Travis Python Test's documentation!
 ==============================================
 
-|travis|
+|travis|    |codecov|
 
 .. toctree::
    :maxdepth: 2
@@ -24,3 +24,6 @@ Indices and tables
 
 .. |travis|  image:: https://travis-ci.org/mdyzma/travis_python_test.svg?branch=master
     :target: https://travis-ci.org/mdyzma/travis_python_test
+
+.. |codecov| image:: https://codecov.io/gh/mdyzma/travis_python_test/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/mdyzma/travis_python_test
