@@ -4,7 +4,7 @@ python:
   - 2.7
   - 3.5
   - 3.6
-  - "3.7-Dev"
+  - "3.7-dev"
 
 # install dependencies
 install:
@@ -14,7 +14,7 @@ install:
 # run scripts
 script:
   - coverage run test_webapp.py
-  - pylint webapp.py
+  - pylint webapp.py -f html > pylint.html
 
 after_success:
   - codecov

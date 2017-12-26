@@ -6,6 +6,8 @@
 Welcome to Travis Python Test's documentation!
 ==============================================
 
+|travis|
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -18,3 +20,7 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+
+.. |travis|  image:: https://travis-ci.org/mdyzma/travis_python_test.svg?branch=master
+    :target: https://travis-ci.org/mdyzma/travis_python_test
